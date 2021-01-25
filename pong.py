@@ -38,8 +38,8 @@ y_speed = 3
 score1 = 0
 score2 = 0
 
-#veriables for breadboard
-p1_analog = MCP3008(channel=0)
+#veriables for breadboard  connect (IC pin 1 to twisty knob 1 middle pin ) (IC pin 2 to twisty 2 knob middle pin)
+p1_analog = MCP3008(channel=0) # conect (gpio8 to IC pin 10) (gpio10 to IC pin 11) (gpio9 to IC pin 12) (gpio11 to IC 13) (IC pin 9 and 14 to GND) (IC 15 and 16 to +3.3v)
 p2_analog = MCP3008(channel=1)
 wallbz = Buzzer(4)              #conect buzzer to GPIO4  (pin7)
 playerbz = Buzzer(17)           #conect buzzer to GPIO17 (pin 11)
